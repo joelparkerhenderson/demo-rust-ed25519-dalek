@@ -1,0 +1,10 @@
+[package]
+name = "demo_rust_ed25519_dalek"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rand = "0.8.0"
+ed25519-dalek = { version = "2.0.0-rc.2", features = ["rand_core"] }   # Use ed25519 cryptographic signing and verification.
